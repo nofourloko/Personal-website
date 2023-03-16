@@ -1,0 +1,102 @@
+.ContactContainer{
+    background-image: url('../assets/contact.jpg');
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.contactInfo{
+    display: flex;
+    gap:50px;
+}
+.Socials{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    border-right: 1px solid black;
+    padding:  0 50px;
+    justify-content: center;
+}
+.Socials > p{
+    margin: 0px;
+}
+.socialsLinks{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 370px;
+    height: 280px;
+    text-align: center;
+}
+label{
+    margin-bottom: 10px;
+}
+.submitButton{
+    font-family: 'Quicksand', monospace;
+    cursor: pointer;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: transparent;
+   border: none;
+   box-shadow: 1px 1px 10px black;
+}
+.contactFormInfo{
+    display: flex;
+    gap: 10px;
+}
+.contactFormInfo::placeholder{
+    color: black  
+}
+.inputInfo, .inputMessage{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 1px 1px 10px black;
+} 
+.inputInfo:focus, .inputMessage:focus{
+    box-shadow: 1px 1px 10px black;
+    border: none;
+    outline: none;
+} 
+.inputMessage{
+    height: 100px;
+    width: 360px;
+}
+.messageSent{
+    height: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding:  0 50px;
+    justify-content: center;
+}
+.messageSentText{
+    margin: 0px 0px 0px 0px;
+}
+.buttonMessageSent{
+    font-family: 'Quicksand', monospace;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 1px 1px 10px black;
+    font-size: 20px;
+    height: 64px;
+
+}
+

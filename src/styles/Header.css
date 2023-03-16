@@ -1,0 +1,60 @@
+.Header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px 0px 10px 0px;
+    font-size: 25px;
+    align-items: center;
+    color: #303337;
+    height: 80px;
+    background-color: transparent;
+    border-bottom: 1px solid #303337;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #303337;
+    background-color: white;
+}
+.link{
+  text-decoration: none;
+}
+.leftSide{
+  animation: ease-out 1s 1 slideInFromLeft;
+  display: flex;
+  gap: 100px;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+.headerPTag{
+    display: flex;
+    text-align: center;
+    border:none;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin-bottom: 10px;
+    color: #303336;
+    padding: 10px 0px 0px 0px;
+}
+.headerIcon{
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.headerPTag:hover{
+    text-align: center;
+    font-size: 25px;
+    margin: 0px;
+    cursor: pointer;
+    filter: brightness(20%);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

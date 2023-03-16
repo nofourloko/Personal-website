@@ -1,0 +1,76 @@
+.MainPage{
+    background-image: url('../assets/zdjecie1.jpg');
+    height: 150vh;
+    width: 110vw;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    font-size: 50px;
+    gap: 0px;
+    align-items: center;
+    position: relative;
+    animation: fadeInUp 2s ease;
+    transform: translateY(2rem);
+    opacity: 0;
+    animation: fadeInUp 1.5s  forwards;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    width: 500px;
+}
+
+.introInfo, .introInfo2{
+  margin-top: 10px;
+  width: 280px;
+  animation: typing 2s steps(11), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+  margin: 0px;
+}
+.introInfo2{
+  width: 460px;
+  animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+.viewMyWork{
+  margin: 2px;
+  width: 50px;
+  height: 50px;
+  border-bottom: 10px solid white;
+  border-right: 10px solid black;
+  transform: translateY(-2rem);
+  opacity: 0;
+  animation: fadeInUp 2s  forwards infinite alternate;
+  rotate: 45deg;
+}
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  
+
+
